@@ -13,7 +13,7 @@ namespace SocialNetwork.DataAccess.Models
         public string Id { get; set; }
 
         [BsonElement("title")]
-        public Name Title { get; set; }
+        public string Title { get; set; }
 
         [BsonElement("body")]
         public string Body { get; set; }

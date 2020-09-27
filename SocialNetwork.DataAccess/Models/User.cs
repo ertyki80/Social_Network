@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace SocialNetwork.DataAccess.Models
@@ -12,11 +14,8 @@ namespace SocialNetwork.DataAccess.Models
         [BsonId]
         public string Id { get; set; }
 
-        [BsonElement("isActive")]
-        public bool IsActive { get; set; }
-
         [BsonElement("name")]
-        public Name Name { get; set; }
+        public string Name { get; set; }
 
 
         [BsonElement("password")]
@@ -40,18 +39,14 @@ namespace SocialNetwork.DataAccess.Models
         public IEnumerable<Friend> Friends { get; set; }
 
     }
-    public class Name
-    {
-        [BsonElement("first")]
-        public string First { get; set; }
-        [BsonElement("last")]
-        public string Last { get; set; }
-    }
+   
     public class Friend
     {
         [BsonElement("id")]
-        public double Id { get; set; }
+        private BsonDouble _id { get; set; }
+       
         [BsonElement("name")]
+        [DataMember]
         public string Name { get; set; }
     }
 }

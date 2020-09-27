@@ -25,6 +25,7 @@ namespace SocialNetwork.DataAccess.Helpers
             _db = client.GetDatabase(databaseName);
         }
 
+
         public void InsertDocument<T>(string collectionName, T document)
         {
             var collection = _db.GetCollection<T>(collectionName);
@@ -36,6 +37,7 @@ namespace SocialNetwork.DataAccess.Helpers
             var collection = _db.GetCollection<T>(collectionName);
 
             return collection.Find(new BsonDocument()).ToList();
+           
         }
 
         public T LoadDocumentById<T>(string collectionName, Guid id)

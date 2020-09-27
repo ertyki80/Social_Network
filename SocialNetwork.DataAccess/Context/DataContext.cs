@@ -9,11 +9,11 @@ using SocialNetwork.DataAccess.Models;
 
 namespace SocialNetwork.DataAccess.Context
 {
-    public class Context
+    public class DataContext
     {
         public List<User> Users;
         public List<Post> Posts;
-        public Context()
+        public DataContext()
         {
 
             var connectionString = "mongodb://localhost:27017";

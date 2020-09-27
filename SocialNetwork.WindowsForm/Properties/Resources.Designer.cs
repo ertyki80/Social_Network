@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace SocialNetwork.WinFormApp.Properties
+namespace SocialNetwork.WindowsForm.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -43,7 +43,7 @@ namespace SocialNetwork.WinFormApp.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SocialNetwork.WinFormApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SocialNetwork.WindowsForm.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

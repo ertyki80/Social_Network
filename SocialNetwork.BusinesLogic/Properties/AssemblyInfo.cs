@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SocialNetwork.WinFormApp")]
+[assembly: AssemblyTitle("SocialNetwork.BusinesLogic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SocialNetwork.WinFormApp")]
+[assembly: AssemblyProduct("SocialNetwork.BusinesLogic")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f4e6ec55-898b-4cd3-bd2c-5bdb5c1d54c6")]
+[assembly: Guid("b98cb502-c0f4-4c93-bb01-92a71be8abe6")]
 
 // Version information for an assembly consists of the following four values:
 //
