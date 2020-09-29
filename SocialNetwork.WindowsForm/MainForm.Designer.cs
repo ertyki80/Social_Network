@@ -76,7 +76,7 @@ namespace SocialNetwork.WindowsForm
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(3, 52);
+            this.materialLabel2.Location = new System.Drawing.Point(10, 56);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(39, 15);
@@ -100,7 +100,7 @@ namespace SocialNetwork.WindowsForm
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button7.Location = new System.Drawing.Point(3, 413);
+            this.button7.Location = new System.Drawing.Point(4, 387);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(239, 45);
             this.button7.TabIndex = 10;
@@ -111,7 +111,7 @@ namespace SocialNetwork.WindowsForm
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button6.Location = new System.Drawing.Point(2, 459);
+            this.button6.Location = new System.Drawing.Point(4, 443);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(239, 45);
             this.button6.TabIndex = 9;
@@ -129,9 +129,9 @@ namespace SocialNetwork.WindowsForm
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button3.Location = new System.Drawing.Point(-3, 503);
+            this.button3.Location = new System.Drawing.Point(4, 499);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(246, 43);
+            this.button3.Size = new System.Drawing.Size(239, 45);
             this.button3.TabIndex = 2;
             this.button3.Text = "About";
             this.button3.UseVisualStyleBackColor = false;
@@ -158,7 +158,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.materialLabel3);
             this.panel2.Location = new System.Drawing.Point(242, 62);
             this.panel2.Name = "panel2";
@@ -191,7 +191,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(242, 95);
             this.panel3.Name = "panel3";
@@ -201,9 +201,9 @@ namespace SocialNetwork.WindowsForm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(403, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 20);
@@ -243,7 +243,7 @@ namespace SocialNetwork.WindowsForm
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(836, 280);
+            this.label2.Size = new System.Drawing.Size(836, 323);
             this.label2.TabIndex = 0;
             this.label2.Text = "Body";
             // 
@@ -269,7 +269,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(241, 449);
             this.panel5.Name = "panel5";
