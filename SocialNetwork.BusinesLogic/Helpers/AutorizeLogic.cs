@@ -45,7 +45,7 @@ namespace SocialNetwork.BusinesLogic.Helpers
             var userService = new UserService();
             var newUser = new User()
             {
-                Id=Guid.NewGuid().ToString(),
+                Id=Guid.NewGuid(),
                 Name=name,
                 Password = password,
                 About = about,

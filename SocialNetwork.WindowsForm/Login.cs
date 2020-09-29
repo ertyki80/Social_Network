@@ -17,7 +17,7 @@ namespace SocialNetwork.WindowsForm
     {
         private User _currentUser;
 
-        public Login()
+        public Login( )
         {
             InitializeComponent();
         }
@@ -53,14 +53,17 @@ namespace SocialNetwork.WindowsForm
             }
         }
 
+        public User GetUser()
+        {
+            return _currentUser;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             AutorizeLogic authorizeLogic = new AutorizeLogic();
             var userExist = authorizeLogic.Login(textBox1.Text, textBox2.Text);
             if (!userExist) return;
             _currentUser = authorizeLogic.GetUser();
-            Console.WriteLine(@"Login successful");
-            Console.WriteLine(@"{0} {1}", _currentUser.Name, _currentUser.Password);
             this.Close();
         }
     }

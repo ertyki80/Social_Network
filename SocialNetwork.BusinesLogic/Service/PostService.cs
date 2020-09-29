@@ -6,7 +6,7 @@ using SocialNetwork.DataAccess.Helpers;
 
 namespace SocialNetwork.BusinesLogic.Service
 {
-    class PostService : IPostService
+    public class PostService : IPostService
     {
 
         const string connectionString = "mongodb://localhost:27017";
@@ -15,7 +15,7 @@ namespace SocialNetwork.BusinesLogic.Service
 
         static DBHelper dbHelper;
 
-        PostService()
+        public PostService()
         {
             dbHelper = DBHelper.CreateInstance(connectionString, databaseName);
         }

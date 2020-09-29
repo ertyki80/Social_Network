@@ -12,7 +12,7 @@ namespace SocialNetwork.DataAccess.Models
     public class User
     {
         [BsonId]
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         [BsonElement("name")]
         public string Name { get; set; }
@@ -43,7 +43,7 @@ namespace SocialNetwork.DataAccess.Models
     public class Friend
     {
         [BsonElement("id")]
-        private BsonDouble _id { get; set; }
+        private Guid _id { get; set; }
        
         [BsonElement("name")]
         [DataMember]

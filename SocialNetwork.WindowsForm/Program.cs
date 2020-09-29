@@ -20,7 +20,7 @@ namespace SocialNetwork.WindowsForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Register());
+            Application.Run(new MainForm());
         }
     }
 }
