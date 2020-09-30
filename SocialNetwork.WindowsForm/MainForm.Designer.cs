@@ -50,6 +50,7 @@ namespace SocialNetwork.WindowsForm
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,12 +75,12 @@ namespace SocialNetwork.WindowsForm
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(10, 56);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(39, 15);
+            this.materialLabel2.Size = new System.Drawing.Size(47, 19);
             this.materialLabel2.TabIndex = 1;
             this.materialLabel2.Text = "Email";
             // 
@@ -212,6 +213,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.label2);
@@ -222,7 +224,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(3, 367);
+            this.label5.Location = new System.Drawing.Point(3, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 21);
             this.label5.TabIndex = 2;
@@ -231,7 +233,7 @@ namespace SocialNetwork.WindowsForm
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(754, 367);
+            this.label4.Location = new System.Drawing.Point(3, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 23);
             this.label4.TabIndex = 1;
@@ -275,6 +277,16 @@ namespace SocialNetwork.WindowsForm
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(839, 71);
             this.panel5.TabIndex = 9;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(779, 297);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(57, 23);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Like";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // MainForm
             // 
@@ -328,5 +340,6 @@ namespace SocialNetwork.WindowsForm
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

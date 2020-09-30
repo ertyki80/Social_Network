@@ -37,7 +37,7 @@ namespace SocialNetwork.DataAccess.Helpers
             var collection = _db.GetCollection<T>(collectionName);
 
             return collection.Find(new BsonDocument()).ToList();
-           
+
         }
 
         public T LoadDocumentById<T>(string collectionName, Guid id)
