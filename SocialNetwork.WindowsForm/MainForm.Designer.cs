@@ -44,13 +44,13 @@ namespace SocialNetwork.WindowsForm
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -156,6 +156,7 @@ namespace SocialNetwork.WindowsForm
             this.button2.TabIndex = 4;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -222,6 +223,16 @@ namespace SocialNetwork.WindowsForm
             this.panel6.Size = new System.Drawing.Size(836, 323);
             this.panel6.TabIndex = 8;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(779, 297);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(57, 23);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Like";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(3, 279);
@@ -277,16 +288,6 @@ namespace SocialNetwork.WindowsForm
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(839, 71);
             this.panel5.TabIndex = 9;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(779, 297);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(57, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Like";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // MainForm
             // 

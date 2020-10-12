@@ -95,5 +95,10 @@ namespace SocialNetwork.WindowsForm
             this.Close();
 
         }
+
+        public User GetUser()
+        {
+            return _currentUser;
+        }
     }
 }

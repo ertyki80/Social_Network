@@ -155,5 +155,25 @@ namespace SocialNetwork.WindowsForm
             postService.Update(posts.ElementAtOrDefault(Id).Id, post_);
             UPDATE();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+
+            register.ShowDialog();
+            if (register.GetUser() != null)
+            {
+
+
+                _user = register.GetUser();
+
+                materialLabel1.Text = _user.Name;
+                materialLabel2.Text = _user.Email;
+            }
+            button1.Hide();
+            button2.Hide();
+
+
+        }
     }
 }
