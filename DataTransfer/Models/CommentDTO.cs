@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +18,7 @@ namespace DataTransfer.Models
         [BsonElement("Comment_Text")]
         public string Comment_Text { get; set; }
         [BsonElement("Likes")]
-        public List<LikesDTO> Likes { get; set; }
-        [BsonElement("Dislikes")]
-        public List<DislikeDTO> Dislikes { get; set; }
+        public List<LikeDTO> Likes { get; set; }
 
         [BsonElement("Create_Date")]
         public BsonTimestamp Create { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Interfaces
 {
-    interface IUserDAL
+    public  interface IUserDAL
     {
         UserDTO GetUserById(int id);
         List<UserDTO> GetAllUsers();

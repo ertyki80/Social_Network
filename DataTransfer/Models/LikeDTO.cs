@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataTransfer.Models
 {
-    public class LikesDTO
+    public class LikeDTO
     {
         [BsonElement("User_Id")]
         public int User_Id { get; set; }
 
-        [BsonElement("User_Id")]
-        public int Count { get; set; }
 
     }
 }

@@ -30,7 +30,7 @@ namespace DataTransfer.Models
         public List<string> Tags { get; set; }
 
         [BsonElement("Likes")]
-        public List<LikesDTO> Likes { get; set; }
+        public List<LikeDTO> Likes { get; set; }
 
         [BsonElement("Comments")]
         public List<CommentDTO> Comments { get; set; }
