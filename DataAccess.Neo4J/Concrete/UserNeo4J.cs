@@ -8,7 +8,7 @@ using DataAccess.Neo4J.Interfaces;
 
 namespace DataAccess.Neo4J.Concrete
 {
-    class UserNeo4J: IUserNeo4J
+    public class UserNeo4J: IUserNeo4J
     {
         private string connectionString;
         private string login;

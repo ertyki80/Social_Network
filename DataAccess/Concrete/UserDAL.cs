@@ -12,6 +12,7 @@ namespace DataAccess.Concrete
 {
     public class UserDAL : IUserDAL
     {
+        
         public UserDTO CreateUser(UserDTO user)
         {
             
@@ -63,6 +64,21 @@ namespace DataAccess.Concrete
                 throw exp;
             }
 
+        }
+        public UserDTO GetUserByLogin(string login)
+        {
+            try
+            {
+
+                var db = (new DataContext()).database._db;
+                var users = db.GetCollection<UserDTO>("Users");
+                var founded = users.Find(p => p.UserLogin == login).Single();
+                return founded;
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
         }
 
         public UserDTO GetUserById(int id)
