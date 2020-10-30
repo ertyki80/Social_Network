@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lables\FriendsDTONeo4J.cs" />
     <Compile Include="Lables\UserDTONeo4J.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

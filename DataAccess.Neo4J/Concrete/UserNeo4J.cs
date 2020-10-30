@@ -3,9 +3,6 @@ using Neo4jClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Neo4jClientRepository;
-using Neo4j;
-using Neo4jClient.Cypher;
 using DataAccess.Neo4J.Interfaces;
 
 
@@ -61,7 +58,7 @@ namespace DataAccess.Neo4J.Concrete
 
                 client.Cypher.Create("(u:User { User_Id: {p1},UserLogin: {p2},FisrtName: {p3},LastName: {p4} })")
                     .WithParam("p1", u.UserId)
-                    .WithParam("p2", u.User_Login)
+                    .WithParam("p2", u.UserLogin)
                     .WithParam("p3", u.UserName)
                     .ExecuteWithoutResults();
             }
@@ -127,10 +124,9 @@ namespace DataAccess.Neo4J.Concrete
                 UserDTONeo4J to_ret = new UserDTONeo4J() { UserId = id };
                 foreach (var u in user)
                 {
-                    to_ret.UserId = u.User_Id;
-                    to_ret.User_Login = u.User_Login;
-                    to_ret.User_Name = u.User_Name;
-                    to_ret.User_Last_Name = u.User_Last_Name;
+                    to_ret.UserId = u.UserId;
+                    to_ret.UserLogin = u.UserLogin;
+                    to_ret.UserName = u.UserName;
                 }
                 return to_ret;
 
@@ -147,7 +143,7 @@ namespace DataAccess.Neo4J.Concrete
                    .Match("(user1:User)-[r:Friends]-(user2:User)")
                    .Where((UserDTONeo4J user1) => user1.UserId == u1.UserId)
                    .AndWhere((UserDTONeo4J user2) => user2.UserId == u2.UserId)
-                   .Return(r => r.As<Friends>()).Results; // how to know type of relationship?
+                   .Return(r => r.As<FriendsDTONeo4J>()).Results;
                 if (is_friends.Count() > 0)
                 {
                     return true;
@@ -172,12 +168,12 @@ namespace DataAccess.Neo4J.Concrete
                     " p = shortestPath((u1)-[:Friends*]-(u2))")
                     .WithParam("p_id1", id1)
                     .WithParam("p_id2", id2)
-                    .Return(ret => ret.As<Result>())
+                    .Return(ret => ret.As<FriendsDTONeo4J>())
                     .Results;
                 int path_len = -1;
                 foreach (var t in res)
                 {
-                    path_len = Convert.ToInt32(t.length);
+                    path_len = Convert.ToInt32(t.Length);
                 }
                 return path_len;
             }

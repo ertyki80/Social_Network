@@ -35,11 +35,11 @@
       <HintPath>..\packages\CacheController2.2.2\lib\net45\CacheController.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Neo4j.Driver, Version=4.1.9.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neo4j.Driver.4.1.1\lib\netstandard2.0\Neo4j.Driver.dll</HintPath>
+    <Reference Include="Neo4j.Driver, Version=4.0.13.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4j.Driver.4.0.2\lib\netstandard2.0\Neo4j.Driver.dll</HintPath>
     </Reference>
-    <Reference Include="Neo4jClient, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neo4jClient.4.0.1\lib\netstandard2.0\Neo4jClient.dll</HintPath>
+    <Reference Include="Neo4jClient, Version=3.1.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4jClient.3.1.0.6\lib\net46\Neo4jClient.dll</HintPath>
     </Reference>
     <Reference Include="Neo4jClientRepository, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neo4jRepository.2.2.16\lib\net45\Neo4jClientRepository.dll</HintPath>

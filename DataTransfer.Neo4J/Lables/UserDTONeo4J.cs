@@ -12,7 +12,7 @@ namespace DataTransfer.Neo4J.Lables
         [JsonProperty(PropertyName = "UserId")]
         public int UserId { get; set; }
         [JsonProperty(PropertyName = "UserLogin")]
-        public string User_Login { get; set; }
+        public string UserLogin { get; set; }
 
         [JsonProperty(PropertyName = "Name")]
         public string UserName { get; set; }
