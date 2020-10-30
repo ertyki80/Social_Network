@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransfer", "DataTransfer\DataTransfer.csproj", "{13B49BD3-439F-4E82-B243-004A24A1283D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Neo4J", "DataAccess.Neo4J\DataAccess.Neo4J.csproj", "{4DD5ED18-903D-44C6-95F7-31561277EE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransfer.Neo4J", "DataTransfer.Neo4J\DataTransfer.Neo4J.csproj", "{7AE54C5C-CAA3-49F4-A4BC-E2D4ACCF19A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{13B49BD3-439F-4E82-B243-004A24A1283D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13B49BD3-439F-4E82-B243-004A24A1283D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13B49BD3-439F-4E82-B243-004A24A1283D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD5ED18-903D-44C6-95F7-31561277EE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD5ED18-903D-44C6-95F7-31561277EE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD5ED18-903D-44C6-95F7-31561277EE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD5ED18-903D-44C6-95F7-31561277EE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE54C5C-CAA3-49F4-A4BC-E2D4ACCF19A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE54C5C-CAA3-49F4-A4BC-E2D4ACCF19A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE54C5C-CAA3-49F4-A4BC-E2D4ACCF19A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE54C5C-CAA3-49F4-A4BC-E2D4ACCF19A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
