@@ -31,7 +31,7 @@ namespace BuisnessLogic.Interface
         #region User
         bool LoginAsUser(string login, string pass);
         void Unlogin();
-        bool CreateNewUser(string Login, string Pwd, string Name, string L_Name, string _Email, List<string> Interests);
+        bool CreateNewUser(string Login, string Pwd, string Name,string _Email, List<string> Interests);
         List<UserDTO> GetAllUsers();
         UserDTO GetMe();
         List<string> GetMyFriendsList();

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BuisnessLogic.Concrete
 {
-    class UserManager
+   public class UserManager
     {
         private readonly string mongo_connectionString = "mongodb://localhost:27017/";
         private readonly string neo4j_connectionString = "http://localhost:7474/db/data/";

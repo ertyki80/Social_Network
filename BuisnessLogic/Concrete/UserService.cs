@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace BuisnessLogic.Concrete
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         private int user_id;
         private bool Logined;
-        UserService(int id)
+        public UserService(int id)
         {
             user_id = id;
             Logined = false;
@@ -52,7 +52,7 @@ namespace BuisnessLogic.Concrete
 
         }
 
-        public bool CreateNewUser(string Login, string Pwd, string Name, string L_Name, string _Email, List<string> Interests)
+        public bool CreateNewUser(string Login, string Pwd, string Name, string _Email, List<string> Interests)
         {
             UserDAL dal = new UserDAL();
             UserDTO new_user = new UserDTO
