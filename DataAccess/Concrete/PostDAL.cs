@@ -148,8 +148,8 @@ namespace DataAccess.Concrete
                 var data = new DataContext();
                 var db = data.database._db;
                 var posts = db.GetCollection<PostDTO>("Posts");
-                var UpdateFilter = Builders<PostDTO>.Update.Set("Post_Id", post.Post_Id);
-                if (post.Author_Id != 0) { UpdateFilter = UpdateFilter.Set("Author_Id", post.Author_Id); }
+                var UpdateFilter = Builders<PostDTO>.Update.Set("PostId", post.Post_Id);
+                if (post.AuthorId != 0) { UpdateFilter = UpdateFilter.Set("AuthorId", post.AuthorId); }
                 if (post.Title != null) { UpdateFilter = UpdateFilter.Set("Title", post.Title); }
                 if (post.Body != null) { UpdateFilter = UpdateFilter.Set("Body", post.Body); }
                 if (post.Tags != null) { UpdateFilter = UpdateFilter.Set("Tags", post.Tags); }

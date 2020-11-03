@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using WebApp.Models;
+using WebApp.Models.Concrete;
 
 namespace WebApp.Controllers
 {
@@ -22,10 +19,10 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel l)
         {
-            AppUser user = new AppUser();
+            UserManagerModel user = new UserManagerModel();
             if (user.Login(l.UserName, l.Password))
             {
-                TempData["User"] = user.User_Id;
+                TempData["User"] = user.UserId;
                 return RedirectToRoute(new { controller = "RegisteredUser", action = "Index" });
             }
             return new HttpUnauthorizedResult();
@@ -38,12 +35,12 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult Register(RegisterModel u)
         {
-            AppUser user = new AppUser();
-            IAppUserManager manager = new AppUserManager();
+            UserManagerModel user = new UserManagerModel();
+            UsersManagerModel manager = new UsersManagerModel();
 
             if (manager.CreateUser(u))
             {
-                TempData["User"] = manager.GetUserByLogin(u.User_Login).User_Id;
+                TempData["User"] = manager.GetUserByLogin(u.UserLogin).UserId;
                 return RedirectToRoute(new { controller = "RegisteredUser", action = "Index" });
             }
             return new HttpUnauthorizedResult();

@@ -103,7 +103,7 @@ namespace DataAccess.Concrete
             {
                 var db = (new DataContext()).database._db;
                 var users = db.GetCollection<UserDTO>("Users");
-                var UpdateFilter = Builders<UserDTO>.Update.Set("User_Id", user.UserId);
+                var UpdateFilter = Builders<UserDTO>.Update.Set("UserId", user.UserId);
                 if (user.UserLogin != null) { UpdateFilter = UpdateFilter.Set("UserLogin", user.UserLogin); }
                 if (user.UserPassword != null) { UpdateFilter = UpdateFilter.Set("UserPassword", user.UserPassword); }
                 if (user.UserName != null) { UpdateFilter = UpdateFilter.Set("UserName", user.UserName); }

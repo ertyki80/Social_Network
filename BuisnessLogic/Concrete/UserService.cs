@@ -97,7 +97,7 @@ namespace BuisnessLogic.Concrete
         {
             PostDTO post = new PostDTO()
             {
-                Author_Id = this.user_id,
+                AuthorId = this.user_id,
                 Title = Title,
                 Body = Body,
                 Tags = Tags.Split(',').ToList(),
@@ -137,7 +137,7 @@ namespace BuisnessLogic.Concrete
             {
                 throw exp;
             }
-            if (post.Author_Id == this.user_id)
+            if (post.AuthorId == this.user_id)
             {
                 try
                 {

@@ -10,20 +10,20 @@ namespace DataTransfer.Models
 {
     public class CommentDTO
     {
-        [BsonElement("Comment_Id")]
+        [BsonElement("CommentId")]
         public int Comment_Id { get; set; }
 
-        [BsonElement("Author_Id")]
+        [BsonElement("AuthorId")]
         public int Author_Id { get; set; }
-        [BsonElement("Comment_Text")]
+        [BsonElement("CommentText")]
         public string Comment_Text { get; set; }
         [BsonElement("Likes")]
         public List<LikeDTO> Likes { get; set; }
 
-        [BsonElement("Create_Date")]
+        [BsonElement("CreateDate")]
         public BsonTimestamp Create { get; set; }
 
-        [BsonElement("Modify_Date")]
+        [BsonElement("ModifyDate")]
         public BsonTimestamp Modify { get; set; }
     }
 }

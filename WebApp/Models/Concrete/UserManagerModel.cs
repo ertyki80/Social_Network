@@ -12,6 +12,10 @@ namespace WebApp.Models.Concrete
     {
         public int UserId { get; set; }
 
+        public UserManagerModel()
+        {
+            
+        }
         public UserManagerModel(int id)
         {
             this.UserId = id;

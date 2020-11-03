@@ -9,21 +9,23 @@ using WebApp.Models.Interfaces;
 
 namespace WebApp.Models.Concrete
 {
-    public class UsersManager : IUsersManagerModel
+    public class UsersManagerModel : IUsersManagerModel
     {
         private readonly IMapper _mapper;
-        public UsersManager()
+
+        public UsersManagerModel()
         {
             MapperConfiguration conf = new MapperConfiguration(
-                    cfg => cfg.AddMaps(
-                        typeof(UserDTO).Assembly,
-                        typeof(UserNeo4JModel).Assembly,
-                        typeof(FullUserModel).Assembly
-                    )
-                );
+                       cfg => cfg.AddMaps(
+                           typeof(UserDTO).Assembly,
+                           typeof(UserNeo4JModel).Assembly,
+                           typeof(FullUserModel).Assembly
+                       )
+                   );
+
             this._mapper = conf.CreateMapper();
         }
-        public UsersManager(IMapper mapper)
+        public UsersManagerModel(IMapper mapper)
         {
             _mapper = mapper;
 

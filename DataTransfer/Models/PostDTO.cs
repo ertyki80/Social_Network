@@ -14,11 +14,11 @@ namespace DataTransfer.Models
         [BsonRepresentation(BsonType.ObjectId)]
 
         public string Id { get; set; }
-        [BsonElement("Post_Id")]
+        [BsonElement("PostId")]
         public int Post_Id { get; set; }
 
-        [BsonElement("Author_Id")]
-        public int Author_Id { get; set; }
+        [BsonElement("AuthorId")]
+        public int AuthorId { get; set; }
 
         [BsonElement("Title")]
         public string Title { get; set; }
@@ -35,10 +35,10 @@ namespace DataTransfer.Models
         [BsonElement("Comments")]
         public List<CommentDTO> Comments { get; set; }
 
-        [BsonElement("Create_Date")]
+        [BsonElement("CreateDate")]
         public BsonTimestamp Create { get; set; }
 
-        [BsonElement("Modify_Date")]
+        [BsonElement("ModifyDate")]
         public BsonTimestamp Modify { get; set; }
 
     }

@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/RegisteredUser/RegisterLayout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="../../Content/Site.css" />
+    <title>Моя сторінка</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><p>Логін: </p></td>
+                <td>@ViewBag.User.UserLogin </td>
+            </tr>
+            <tr>
+                <td><p>Ім'я Прізвище: </p></td>
+                <td>@ViewBag.User.UserName </td>
+            
+            </tr>
+            <tr>
+                <td><p>Електронна пошта: </p></td>
+                <td>
+                    @ViewBag.User.Email
+                </td>
+            </tr>
+            <tr>
+                <td><p>Інтереси: </p></td>
+                <td>
+                    @foreach (var inter in ViewBag.User.Interests)
+                    {
+                        <p>@inter,</p>
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td><p>Друзі: </p></td>
+                <td>
+                    @foreach (var friends in ViewBag.User.FriendsId)
+                    {
+                        <p>@friends , </p>
+                    }
+                </td>
+            </tr>
+        </table>
+</div>
+</body>
+</html>

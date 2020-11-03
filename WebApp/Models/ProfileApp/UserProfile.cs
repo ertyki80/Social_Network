@@ -5,6 +5,7 @@ using System.Web;
 using AutoMapper;
 using DataTransfer.Models;
 using DataTransfer.Neo4J.Lables;
+using WebApp.Models.Concrete;
 
 namespace WebApp.Models.ProfileApp
 {
@@ -24,7 +25,7 @@ namespace WebApp.Models.ProfileApp
         }
         public static List<string> GetUserInterests(int id)
         {
-            var manager = new AppUserManager();
+            var manager = new UsersManagerModel();
             var user = manager.GetUserById(id);
             return user.Interests;
         }

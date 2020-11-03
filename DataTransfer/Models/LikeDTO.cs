@@ -9,7 +9,7 @@ namespace DataTransfer.Models
 {
     public class LikeDTO
     {
-        [BsonElement("User_Id")]
+        [BsonElement("UserId")]
         public int User_Id { get; set; }
 
 
