@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using DataTransfer.Models;
 using DataTransfer.Neo4J.Lables;

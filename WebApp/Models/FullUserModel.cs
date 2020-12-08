@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace WebApp.Models
 {
     public class FullUserModel
     {
+
         public int UserId { get; set; }
         public string UserLogin { get; set; }
         public string UserPassword { get; set; }

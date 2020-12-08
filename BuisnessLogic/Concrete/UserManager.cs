@@ -1,10 +1,12 @@
-﻿using DataAccess.Concrete;
+﻿using Cassandra;
+using DataAccess.Concrete;
 using DataAccess.Neo4J.Concrete;
 using DataTransfer.Models;
 using DataTransfer.Neo4J.Lables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,8 +16,27 @@ namespace BuisnessLogic.Concrete
     {
         private readonly string mongo_connectionString = "mongodb://localhost:27017/";
         private readonly string neo4j_connectionString = "http://localhost:7474/db/data/";
+        private static readonly IPAddress IpAddress = IPAddress.Parse("127.0.0.1"); 
         private readonly string neo4j_login = "neo4j";
         private readonly string neo4j_pass = "1234567890";
+
+        readonly IPEndPoint[] _iPEndPoints =
+      {
+            new IPEndPoint(IpAddress, 9040), new IPEndPoint(IpAddress, 9041), new IPEndPoint(IpAddress, 9042),
+            new IPEndPoint(IpAddress, 9043)
+        };
+        public ISession GetSession()
+        {
+
+            var cluster = Cluster.Builder()
+                .AddContactPoints(_iPEndPoints)
+                .Build();
+
+            var session = cluster.Connect("social_media");
+
+            return session;
+
+        }
         public UserManager()
         {
 

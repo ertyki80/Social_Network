@@ -1,10 +1,7 @@
 ﻿using AutoMapper;
 using BuisnessLogic.Concrete;
 using DataTransfer.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using WebApp.Models.Interfaces;
 
 namespace WebApp.Models.Concrete

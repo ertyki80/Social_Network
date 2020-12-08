@@ -1,9 +1,5 @@
 ﻿using BuisnessLogic.Concrete;
-using BuisnessLogic.Interface;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using WebApp.Models.Interfaces;
 
 namespace WebApp.Models.Concrete
